@@ -1,0 +1,418 @@
+.componentsContainer{
+    scroll-margin-top: var(--scrollMargin);
+    scroll-behavior: smooth;
+}
+
+.text_card {
+    background-color: var(--backgroundColorSecondary);
+    border-radius: var(--mainBorderRadius);
+    margin: 3rem;
+    box-sizing: content-box;
+}
+
+.main_container{
+    display: flex ;
+    justify-content: space-evenly;
+}
+
+.stats_container{
+    display: grid;
+    max-width: border-box;
+    width: 100%;
+    overflow: hidden;
+    height: content-box;
+    grid-template-columns: auto auto;
+}
+
+.stats_card_wrapper{
+    background-color: var(--backgroundColorSecondary);
+    overflow: hidden;
+    width: content-box;
+    height: auto;
+    padding: 5%;
+}
+
+
+.stats_internal_div{
+    padding : 3px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    justify-content: center;
+    text-align: center;
+
+    overflow: hidden;
+
+    border-radius: var(--secondaryBorderRadius);
+    border: var(--secondaryBorderSize) dashed;
+
+    font-size: var(--pFontSize);
+}
+
+/*
+.royalties_container{
+    margin-top: 16px;
+
+    max-width: border-box;
+    overflow: hidden;
+    height: content-box;
+
+    position: relative;
+    display: grid;
+    width: 100%;
+
+    background-color: var(--secondaryBorderRadius);
+    padding: 2%  1%;
+    border-radius: var(--secondaryBorderRadius);
+    border: var(--secondaryBorderSize) dashed;
+}
+
+.royalties_middle{
+
+}
+
+ */
+
+
+.royalties_container{
+    width: border-box;
+    margin-top: 16px;
+
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+
+    background-color: var(--secondaryBorderRadius);
+    padding: 2%  1%;
+    border-radius: var(--secondaryBorderRadius);
+    border: var(--secondaryBorderSize) dashed;
+
+}
+
+.royalties_div{
+    display: flex;
+
+}
+
+.internal_royalties_section{
+    width: auto;
+    display: flex;
+    //flex-direction: column;
+
+    justify-items: center;
+    padding-left : 1%;
+
+    font-size: var(--pFontSize);
+}
+
+
+
+.description_section{
+    width: border-box;
+    margin-top: 16px;
+    border-radius: var(--secondaryBorderRadius);
+    border: var(--secondaryBorderSize) dashed;
+}
+
+.image{
+    //max-width: 200px;
+    //max-height: 200px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    border: var(--secondaryBorderSize) dashed ;
+}
+
+.address_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top : 0px;
+    color: limegreen;
+}
+
+
+.main {
+    margin-bottom: 10px;
+}
+
+.h1 {
+    width: border-box;
+    padding-top : 1rem;
+    text-align: center;
+    font-size: var(--h1FontSize);
+}
+
+.h2 {
+    width: border-box;
+    text-align: left;
+    font-size: var(--h2FontSize);
+
+}
+
+.h3{
+    width: border-box;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: left ;
+    font-size: var(--h3FontSize);
+}
+
+.p {
+    width: border-box;
+    padding-left: 10px;
+    font-size: var(--pFontSize);
+    text-align: left;
+    padding-bottom: 10px;
+    word-break: break-word;
+}
+
+.logos_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.logos{
+    //margin-right: 10px;
+    /* min size 16px (twitter), space around = 150% of the size */
+    width: var(--logo_squared_px_sizes);
+    height: var(--logo_squared_px_sizes);
+    background-color: transparent;
+    box-shadow: none;
+    align-items: center;
+    justify-content: center;
+    border: var(--secondaryBorderSize) solid transparent;
+}
+.logos:hover{
+    cursor: pointer;
+    border: var(--secondaryBorderSize) dashed black;
+    border-radius: 15%;
+    transition: color;
+}
+
+
+
+.chart_buttons_div{
+    margin-top: 10px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    font-size: var(--buttonFontSize);
+    font-family: Arial, sans-serif;
+}
+
+.chart_buttons_style{
+    padding: 1%;
+    background-color: transparent;
+    border-radius: var(--secondaryBorderSize);
+    border: var(--secondaryBorderSize) dashed;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-size: var(--buttonFontSize);
+    font-family: Arial, sans-serif;
+}
+
+.chart_buttons_style:hover {
+    color: var(--redColor);
+}
+
+.usd_eth_button{
+    padding: 1%;
+    background-color: transparent;
+    border-radius: var(--secondaryBorderRadius);
+    border: var(--secondaryBorderSize) solid;
+    cursor: pointer;
+    color: var(--text-primary);
+    font-size: var(--buttonFontSize);
+    font-family: Arial, sans-serif;
+}
+.usd_eth_button:hover {
+    color: var(--yellowColor);
+}
+
+
+
+.multiple_charts_button_div{
+    vertical-align: center;
+    height: available;
+    flex-direction: column;
+    width: 15%;
+    float: left;
+    font-size: var(--buttonFontSize);
+    font-family: Arial, sans-serif;
+}
+
+.multiple_charts_buttons_style{
+    width: 100%;
+    border : var(--secondaryBorderSize) dashed var(--borderColor);
+    border-radius: var(--tertiaryBorderRadius);
+    background: transparent;
+    margin-top: 10px;
+    height: 40px;
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: var(--buttonFontSize);
+    font-family: Arial, sans-serif;
+}
+
+.multiple_charts_buttons_style:hover{
+    color: var(--yellowColor);
+    border-color: var(--yellowColor);
+}
+
+.title_and_info_button_div{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: border-box;
+    font-size: var(--buttonFontSize);
+    font-family: Arial, sans-serif;
+}
+
+.information_mark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+
+.charts_titles{
+    justify-items : center;
+    display : inline-block;
+    width : 90%;
+    text-align : center;
+    font-size: var(--h3FontSize);
+}
+
+
+
+
+.multiple_charts_wrapper{
+    border: dashed var(--borderColor);
+    border-radius: var(--secondaryBorderRadius);
+    align-items: center;
+
+
+}
+
+.multiple_charts_container{
+    width: border-box;
+
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 1rem;
+}
+
+.multiple_charts_info{
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.main_Chart{
+    width: 100%;
+    margin-top: 10px;
+    z-index: 8;
+}
+
+.scroller_section{
+
+    padding: 10px 0;
+    border-bottom: var(--cardsBorderSize) dashed var(--borderColor);
+    border-radius: var(--secondaryBorderRadius);
+
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: space-between;
+
+    display: grid;
+    grid-gap: 9px;
+    grid-template-columns: 10px repeat(4, var(--varScrollerChartsWidth)) 10px;
+    grid-template-rows: 1fr;
+
+    overflow-x: auto;
+    overflow-y: clip;
+    scroll-snap-type: x proximity;
+
+}
+
+.scroller_section::before,
+.scroller_section::after{
+    content: "";
+}
+
+.scroller_section button{
+    margin: 5px;
+
+    //width: var(--varScrollerChartsWidth);
+    height: var(--varScrollerChartsHeight);
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: var(--tertiaryBorderRadius);
+    background-color: var(--backgroundColorSecondary);
+    border: var(--secondaryBorderSize) dashed var(--borderColor);
+    color: var(--text-primary);
+
+    font-size: var(--buttonFontSize);
+    font-family: Arial, sans-serif;
+}
+
+
+.scroller_section button:hover{
+    cursor: pointer;
+    color: var(--yellowColor);
+}
+
+.scroller_section p{
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.cookiesDialog{
+    margin: 5px;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.cookiesDialog h1{
+    margin: 15px 10px;
+    width: border-box;
+    text-align: center;
+    font-size: var(--h1FontSize);
+}
+.cookiesDialog p{
+    margin: 5px 10px;
+    width: border-box;
+    font-size: var(--pFontSize);
+    text-align: center;
+    word-break: break-word;
+}
+
+.cookiesDialog button{
+    font-weight: bold;
+    color: var(--text-primary);
+    text-align: center;
+    margin: 10px;
+    border-radius: var(--tertiaryBorderRadius);
+    background-color: var(--backgroundColorSecondary);
+    border: var(--secondaryBorderSize) dashed var(--borderColor);
+}
+.cookiesDialog button:focus,
+.cookiesDialog button:hover{
+    cursor: pointer;
+    background-color: var(--greenColor);
+    color: var(--text-primary);
+}
+

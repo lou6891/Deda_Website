@@ -1,0 +1,253 @@
+/*
+To have broken scroll add scroll-margin-block-start
+in *
+
+white colos:
+- Pearl #E8EAE6
+- alabaster #EDEAE0
+- Unresolved Problem #F3F2ED
+- Rose White #FFFAFA
+- Vista White #FDFCFA
+- Snow Drift  #F8FBF8
+- Daisy #FAFAFA
+- Azure #F0FFFF
+- Off White #FAF9F6
+
+grey :
+- White on White #EDEFEF
+- Lexicon Quarter #F2F2F1
+- Anti-Flash White #F2F3F4
+- Mercury #E7E7E7
+- Gainsboro #DCDCDC
+
+Azure #F0FFFF
+
+old white #FAF9F6
+ececec
+ */
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --scrollMargin : 90px;
+
+    --logo_squared_px_sizes : 40px;
+
+    --backgroundColorPrimary : #E7E7E7;
+    --backgroundColorSecondary : #f5f5f5;
+
+    --text-primary: #000;
+    --text-secondary: #ffffff;
+
+    --borderColor:#000;
+    --shadows:#000;
+
+    --headermargin: 4rem;
+    --lateralnavigationmargin: 200px;
+    --footerheight: 4rem;
+    --minlateralnavigationwitdh : 60px;
+    --maxlateralnavigationwitdh : 220px;
+    --greenColor : #7ad57a;
+    --redColor : #e56871;
+    --blueColor : rgba(3, 177, 220, 0.9);
+    --purpleColor : #c75adc;
+    --yellowColor : #bb9143;
+    --whiteColor : #ffffff;
+    --blackColor : #000000;
+
+    --greyColor : #A9A9A9;
+    --darkGreyColor : #686868;
+
+
+    --mainBorderSize : 3px;
+    --cardsBorderSize : 2px;
+    --secondaryBorderSize : 0.08rem;
+
+    --mainBorderRadius : 8px;
+    --secondaryBorderRadius : 4px;
+    --tertiaryBorderRadius : 2px;
+
+    /*
+    medium|xx-small|x-small|small|large|x-large|xx-large|smaller|larger|length|initial|inherit;
+     */
+    --h1FontSize : 22px;
+    --h2FontSize : 21px;
+    --h3FontSize : 20px;
+    --pFontSize : 19px;
+    --buttonFontSize : 17px;
+    --tooltipFontSize : 17px;
+
+
+    /*
+    Heigh and witdh of the scroller chart selector
+     */
+    --varScrollerChartsHeight : 90px;
+    --varScrollerChartsWidth : 120px;
+    --varScrollerChartDubbyWidth : 160px;
+
+}
+
+[data-width = false] {
+    --h1FontSize : 20px;
+    --h2FontSize: 19px;
+    --h3FontSize : 18px;
+    --pFontSize : 17px;
+    --buttonFontSize : 16px;
+    --tooltipFontSize : 16px;
+}
+
+[data-theme = 'dark'] {
+    --backgroundColorPrimary : #3c3c3c;
+    //--backgroundColorSecondary : #1e1e1e;
+    --backgroundColorSecondary : #1f1f1f;
+
+    --text-primary: #FAF9F6;
+    --text-secondary: #000000;
+
+    --borderColor:#FAF9F6;
+    --shadows:#FAF9F6;
+    --headermargin: 4rem;
+    --lateralnavigationmargin: 200px;
+    --footerheight: 4rem;
+
+    --greenColor : #98E698;
+    --redColor : #FF858D;
+    --blueColor :  rgba(0,192,240,0.9);
+    --purpleColor : #ef85ff;
+    --yellowColor : #D2A44F;
+    --whiteColor : #ffffff;
+    --blackColor : #000000;
+}
+
+
+
+/*
+position: fixed;
+    overflow-y: scroll;
+    overflow-x: clip;
+ */
+
+.App{
+
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: clip;
+
+    background-color: var(--backgroundColorPrimary);
+    color: var(--text-primary);
+
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+
+#app {
+    left: 0;
+    right: 0;
+
+    //background-color: var(--backgroundColor);
+
+    border-left: var(--borderColor);
+    border-left-style: solid;
+    border-right: var(--borderColor);
+    border-right-style: solid;
+
+    margin-top: var(--headermargin);
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+#page-wrap {
+    display: flex;
+    float: right;
+    height: 100%;
+    width: 100%;
+    left: 0;
+
+    right: 0;
+    z-index: 3;
+
+}
+
+#lateral_nav_section{
+    display: flex;
+    float: left;
+    height: 100%;
+    block-size: auto;
+    writing-mode: horizontal-tb;
+}
+
+
+#app_internal_wrapper{
+
+    display: grid;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+
+}
+
+#internal_layout {
+    padding: 25px 45px;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+.h1{
+    font-size: var(--h1FontSize);
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+a.active {
+    //background-color: #1144ff;
+    color: #ffffff;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#IconBackground_div{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    overflow: hidden;
+    //background-color: var(--backgroundColorPrimary) ;
+}
+
+#background_icons_row{
+    /*overflow: hidden;*/
+    position: relative;
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    color: white;
+}
+
+#background_icons_columns{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+}
+
+

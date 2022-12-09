@@ -1,0 +1,59 @@
+.card_sections {
+
+    background-color: var(--backgroundColorSecondary);
+    border-radius: var(--mainBorderRadius);
+    margin-bottom: 3rem;
+    border: var(--cardsBorderSize);
+
+    border-style: dashed;
+    box-shadow: grey;
+
+    box-sizing: border-box;
+    display: flex;
+    max-width: border-box;
+}
+
+.card_testi {
+    overflow: hidden;
+    width: 100%;
+    height: content-box;
+    background-color: var(--backgroundColorPrimary);
+    border-radius: var(--mainBorderRadius);
+    border: var(--mainBorderSize) dashed;
+    margin: 1rem;
+}
+
+.main {
+    padding : 10px;
+
+}
+
+.h1 {
+    padding : 15px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.h2 {
+    padding : 15px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.p {
+    font-size: large;
+    padding-top: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+    text-align: justify;
+    padding-bottom: 1rem;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.item {
+}

@@ -1,0 +1,22 @@
+.main_about{
+    position: marker;
+    border-left: var(--border);
+    border-left-style: solid;
+    border-right: var(--border);
+    border-right-style: solid;
+    background-color: var(--background);
+    margin-top: 1rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: content-box;
+}
+
+
+.h1{
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

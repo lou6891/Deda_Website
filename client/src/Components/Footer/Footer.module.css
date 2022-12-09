@@ -1,0 +1,26 @@
+.footer{
+    //position: fixed;
+    display: flex;
+    float: bottom;
+    border: var(--border);
+    border-style: solid;
+    justify-content: center;
+    align-content: center;
+    height: var(--footerheight);
+    width: 100%;
+    //background-color: #ff112d;
+    background: var(--backgroundColorSecondary);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.p {
+    width: border-box;
+    padding-left: 10px;
+    font-size: var(--pFontSize);
+    text-align: left;
+    padding-bottom: 10px;
+    word-break: break-word;
+}

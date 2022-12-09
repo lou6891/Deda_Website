@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+
+#### HELLO FROM DEDA IF YOU ARE READING THIS IT MEANS YOU ARE A PRO! (BUMPFIST) ####

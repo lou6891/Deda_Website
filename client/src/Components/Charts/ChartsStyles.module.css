@@ -1,0 +1,39 @@
+.tooltip{
+    background-color: var(--backgroundColorPrimary);
+    border: var(--secondaryBorderSize) dashed var(--borderColor);
+    color: var(--text-primary);
+    padding: 7px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    font-size: var(--tooltipFontSize);
+    font-family: Arial, sans-serif;
+}
+
+.brush{
+    white-space: pre;
+}
+
+.legendContainer{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: var(--pFontSize);
+    font-family: Arial, sans-serif;
+}
+
+.legendItem{
+    align-items:center;
+    padding-top: 3px;
+    margin-left: 5px;
+    margin-right:5px
+}
+
+
+
+/*
+                        stroke={tickStroke}
+ */
+
