@@ -1,0 +1,26 @@
+Unable to connect to server MongoNetworkError: connect ETIMEDOUT 35.157.250.74:27017
+    at connectionFailureError (C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\node_modules\mongodb\lib\cmap\connect.js:375:20)
+    at TLSSocket.<anonymous> (C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\node_modules\mongodb\lib\cmap\connect.js:295:22)
+    at Object.onceWrapper (node:events:646:26)
+    at TLSSocket.emit (node:events:526:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\Back_End\Routes\Collections\Get_collection_dahsboard.js:37
+                db.close().then(() => res.send("Unable to connect to server"))
+                   ^
+
+TypeError: db.close is not a function
+    at C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\Back_End\Routes\Collections\Get_collection_dahsboard.js:37:20
+    at C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\node_modules\mongodb\lib\utils.js:413:17
+    at C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\node_modules\mongodb\lib\mongo_client.js:129:28
+    at connectCallback (C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\node_modules\mongodb\lib\operations\connect.js:29:9)
+    at C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\node_modules\mongodb\lib\operations\connect.js:78:20
+    at C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\node_modules\mongodb\lib\sdam\topology.js:215:58
+    at C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\node_modules\mongodb\lib\cmap\connection_pool.js:270:25
+    at C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\node_modules\mongodb\lib\sdam\server.js:196:24
+    at Object.callback (C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\node_modules\mongodb\lib\cmap\connection_pool.js:267:13)
+    at C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\node_modules\mongodb\lib\cmap\connection_pool.js:475:29
+PS C:\Users\lucac\OneDrive\Desktop\PDA_DPA\JS\DPA_V2\back_end>

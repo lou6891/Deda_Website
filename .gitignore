@@ -1,0 +1,10 @@
+# File to ingore git
+client/node_modules/
+server/node_modules/
+server/Personal_notes/
+note.txt
+*.env
+nginx/dedaCombined.crt
+nginx/dedaCombined.pem
+nginx/SSSL_key.pem
+.idea/

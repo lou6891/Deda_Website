@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+
+
+  nginx:
+    image: 596042303513.dkr.ecr.eu-central-1.amazonaws.com/website:deda-nginx
+    depends_on:
+      - api
+      - client
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports:
+      - "443:443"
+      - "80:80"
+  api:
+    image: 596042303513.dkr.ecr.eu-central-1.amazonaws.com/website:deda-api
+    build:
+      dockerfile: Dockerfile
+      context: "./server"
+    volumes:
+      - /app/node_modules
+      - ./server:/app
+
+  client:
+    image: 596042303513.dkr.ecr.eu-central-1.amazonaws.com/website:deda-client
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      dockerfile: Dockerfile
+      context: ./client
+    volumes:
+      - /app/node_modules
+      - ./client:/app
